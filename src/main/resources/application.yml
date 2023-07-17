@@ -1,0 +1,14 @@
+spring:
+#  data:
+#    neo4j:
+#      uri: bolt://localhost:7687
+#      username: neo4j
+#      password: sxn700320
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: org.neo4j.jdbc.bolt.BoltDriver
+    url: jdbc:neo4j:bolt://localhost:7687
+    username: neo4j
+    password: sxn700320
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
